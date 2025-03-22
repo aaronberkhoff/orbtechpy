@@ -1,0 +1,29 @@
+[project]
+name = "orbtechpy"
+version = "0.1.0"
+description = "None"
+authors = [
+    {name = "Aaron Berkhoff",email = "aaronberkhoff@outlook.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy (>=2.2.3,<3.0.0)",
+    "scipy (>=1.15.2,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "tables (>=3.10.2,<4.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.4"
+mypy = "^1.15.0"
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
